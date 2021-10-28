@@ -1,0 +1,27 @@
+#div0 {
+    background-color:burlywood;
+    height: 700px;
+    width: 600px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+#div1 {
+    background-color:brown;
+    height: 700px;
+    width: 600px;
+    margin-left: 700px;
+    position: absolute;
+}
+
+#span {
+    position: fixed;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-style: dotted;
+    background-color:cadetblue;
+}
+
