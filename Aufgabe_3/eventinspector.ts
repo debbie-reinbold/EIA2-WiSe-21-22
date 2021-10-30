@@ -1,5 +1,6 @@
 namespace Events {
-    // Gruppenarbeit mit Asya, Tini, Lisa und mir :D 
+    // Gruppenarbeit mit Asya, Tini, Lisa und mir !!! 
+
     window.addEventListener("load", handleLoad);
     // 1. Funktion, um mousemove, key up und click installieren.
     function handleLoad(_event: Event): void {
@@ -14,7 +15,9 @@ namespace Events {
         document.body.addEventListener("click", logInfo);
         document.body.addEventListener("keyup", logInfo);
 
-        //alle Divs im Dokument finden und auf jedes Div einen click und keyup installieren
+        //alle Divs im Dokument finden und auf jedes Div einen click und keyup installieren. Eventuell eine
+        // For-Schleife nutzen, um alle Divs durchzugehen, und nicht einzeln auf jedes zugreifen ??? Weiß aber nicht
+        // genau wie umzusetzen. 
 
         document.getElementById("div0").addEventListener("click", logInfo);
         document.getElementById("div0").addEventListener("keyup", logInfo);
@@ -22,23 +25,26 @@ namespace Events {
         document.getElementById("div1").addEventListener("click", logInfo);
     }
 
-    // MouseEvent, zweite Funktion im Tracetable, 
+    // MouseEvent, zweite Funktion im Tracetable. Event Target im Span und Koordinaten der Maus anzeigen. 
+    //Durch Style auf CSS zugreifen
+    
     function setInfoBox(_event: MouseEvent): void {
 
 
         let cord1: number = _event.clientX;
         let cord2: number = _event.clientY;
         let span: HTMLElement = document.getElementById("span");
+        let eventTarget: EventTarget = _event.target; 
 
 
-        span.innerHTML = "x position:" + cord1 + "y position" + cord2;
+        span.innerHTML = "target:" + eventTarget + "<br>" + "x position:" + cord1 + "<br>"  + "y position:" + cord2;
 
         span.style.left = cord1 + "px";
         span.style.top = cord2 + "px";
     }
 
 
-    // Event, dritte Funktion im Tracetable für Browserkonsole, wenn auf Bild die divs geglickt wird 
+    // Event, dritte Funktion im Tracetable für Browserkonsole, wenn im Browser Bild die divs geglickt werden. 
     function logInfo(_event: Event): void {
         console.log("Target: " + _event.target);
         console.log("CurrentTarget: " + _event.currentTarget);
