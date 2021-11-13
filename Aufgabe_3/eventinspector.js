@@ -1,3 +1,4 @@
+"use strict";
 var Events;
 (function (Events) {
     // Gruppenarbeit mit Asya, Tini, Lisa und mir !!! 
@@ -22,10 +23,10 @@ var Events;
     // MouseEvent, zweite Funktion im Tracetable. Event Target im Span und Koordinaten der Maus anzeigen. 
     //Durch Style auf CSS zugreifen
     function setInfoBox(_event) {
-        var cord1 = _event.clientX;
-        var cord2 = _event.clientY;
-        var span = document.getElementById("span");
-        var eventTarget = _event.target;
+        let cord1 = _event.clientX;
+        let cord2 = _event.clientY;
+        let span = document.getElementById("span");
+        let eventTarget = _event.target;
         span.innerHTML = "target:" + eventTarget + "<br>" + "x position:" + cord1 + "<br>" + "y position:" + cord2;
         span.style.left = cord1 + "px";
         span.style.top = cord2 + "px";

@@ -1,0 +1,39 @@
+html body{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    overflow: hidden;
+}
+
+#settings {
+    text-align: flex;
+    justify-content: flex;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.column {
+    float: left;
+    width: auto;
+    padding: 0 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 50px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
