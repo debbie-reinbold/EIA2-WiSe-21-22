@@ -1,6 +1,7 @@
 "use strict";
 var L08_GenerativeArt;
 (function (L08_GenerativeArt) {
+    // habe mit Tini, Asya und Lisa gearbeitet 
     // load listener auf Window intallieren 
     window.addEventListener("load", handleLoad);
     // 2D Kontext und den Refreshbutton deklarieren 

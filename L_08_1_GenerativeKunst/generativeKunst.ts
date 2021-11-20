@@ -1,5 +1,5 @@
 namespace L08_GenerativeArt {
-
+    // habe mit Tini, Asya und Lisa gearbeitet 
     // load listener auf Window intallieren 
     window.addEventListener("load", handleLoad);
 
