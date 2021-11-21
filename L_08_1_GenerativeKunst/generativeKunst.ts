@@ -1,5 +1,12 @@
 namespace L08_GenerativeArt {
-    // habe mit Tini, Asya und Lisa gearbeitet 
+    /*
+    Aufgabe: <L08.1 Generative Art>
+    Name: <Debbie Reinbold>
+    Martrikelnummer: <268174>
+    Datum: <20.11.2021>
+    Quellen: <zusammengearbeitet mit Christina Gabler, Asya Tetik und Lisa Fingerle>
+    */ 
+
     // load listener auf Window intallieren 
     window.addEventListener("load", handleLoad);
 
