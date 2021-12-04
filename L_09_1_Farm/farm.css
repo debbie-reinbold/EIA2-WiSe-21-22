@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;  
+  background: url(farm_background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+h1 {
+  font-size: 30px;
+  font-family:fantasy;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#container{
+  display: flex;
+  margin-left: 250px;
+}
+
+#inventory {
+  border-radius: 10px;
+  background-color:burlywood;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  opacity: 55%;
+  font-size: 15px;
+  
+}
+
+#animal {
+  width: 350px;
+  height: 350px;
+  margin: 15px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color:burlywood;
+  opacity: 55%;
+}
+
+#eating {
+  font-size: 30px;
+  color:burlywood;
+  margin-top: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
