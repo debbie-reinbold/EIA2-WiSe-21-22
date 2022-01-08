@@ -1,3 +1,11 @@
+/*
+Aufgabe: <Aufgabe_10.2>
+Name: <Debbie Reinbold>
+Matrikel: <268174>
+Datum: <08.01.2022>
+Quellen: <Zusammengearbeitet mit Tini, Asya, Lisa >
+*/
+
 namespace Polymorphie {
     export let crc2: CanvasRenderingContext2D;
     export let goldenCut: number = 0.62;
