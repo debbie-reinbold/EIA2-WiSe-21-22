@@ -4,7 +4,7 @@ var Polymorphie;
     class Leaf extends Polymorphie.Moveable {
         constructor(_position, _velocity, _randomScale) {
             super(_position, _velocity);
-            this.randomNumber = (Math.floor(Math.random() * 100) + 400);
+            this.randomNumber = (Math.floor(Math.random() * 800) + 200);
             this.counter = 0;
             this.randomScaleX = _randomScale.x;
             this.randomScaleY = _randomScale.y;
@@ -31,14 +31,14 @@ var Polymorphie;
             if (this.posX > Polymorphie.crc2.canvas.width || this.posX < 0) {
                 this.velocityX = -this.velocityX;
             }
-            if (this.posY > Polymorphie.crc2.canvas.height || this.posY < Polymorphie.crc2.canvas.height * 0.65) {
-                this.velocityY = -this.velocityY;
-            }
+            // if (this.posY > crc2.canvas.height || this.posY < crc2.canvas.height * 0.65) {
+            //   this.velocityY = -this.velocityY;
+            // }
             if (this.counter == this.randomNumber) {
                 this.velocityX = -this.velocityX;
                 this.velocityY = -this.velocityY;
                 this.counter = 0;
-                this.randomNumber = (Math.floor(Math.random() * 800) + 300);
+                this.randomNumber = (Math.floor(Math.random() * 800) + 100);
             }
             this.posX += this.velocityX;
             this.posY += this.velocityY;

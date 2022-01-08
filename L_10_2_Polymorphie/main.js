@@ -1,4 +1,11 @@
 "use strict";
+/*
+Aufgabe: <Aufgabe_10.2>
+Name: <Debbie Reinbold>
+Matrikel: <268174>
+Datum: <08.01.2022>
+Quellen: <Zusammengearbeitet mit Tini, Asya, Lisa >
+*/
 var Polymorphie;
 (function (Polymorphie) {
     Polymorphie.goldenCut = 0.62;
@@ -28,12 +35,12 @@ var Polymorphie;
     }
     function createLeafs(_nLeaf) {
         for (let index = 0; index < _nLeaf; index++) {
-            let randomScaleY = 0.5 + Math.random() * (0.60 - 0.10);
+            let randomScaleY = 0.8 + Math.random() * (0.1 - 0.05);
             let randomScaleX = randomScaleY;
             randomScaleX *= Math.round(Math.random()) ? 1 : -1;
-            let randomVelocityX = (Math.random() - 0.5) * 2;
+            let randomVelocityX = (Math.random() - 0.5) * 3;
             let randomVelocityY = (Math.random() - 0.5) * 3;
-            moveable.push(new Polymorphie.Leaf({ x: Polymorphie.crc2.canvas.width, y: Polymorphie.crc2.canvas.height * 0.8 }, { x: randomVelocityX, y: randomVelocityY }, { x: randomScaleX, y: randomScaleY }));
+            moveable.push(new Polymorphie.Leaf({ x: Polymorphie.crc2.canvas.width, y: Polymorphie.crc2.canvas.height * -0.7 }, { x: randomVelocityX, y: randomVelocityY }, { x: randomScaleX, y: randomScaleY }));
         }
     }
     function createSquirrel(_nSquirrel) {

@@ -2,7 +2,7 @@ namespace Polymorphie {
     export class Leaf extends Moveable {
         public randomScaleX: number;
         public randomScaleY: number;
-        public randomNumber: number = (Math.floor(Math.random() * 100) + 400);
+        public randomNumber: number = (Math.floor(Math.random() * 800) + 200);
         public counter: number = 0;
 
         constructor(_position: Vector, _velocity: Vector, _randomScale: Vector) {
@@ -40,15 +40,15 @@ namespace Polymorphie {
                 this.velocityX = -this.velocityX;
             }
 
-            if (this.posY > crc2.canvas.height || this.posY < crc2.canvas.height * 0.65) {
-                this.velocityY = -this.velocityY;
-            }
+           // if (this.posY > crc2.canvas.height || this.posY < crc2.canvas.height * 0.65) {
+             //   this.velocityY = -this.velocityY;
+           // }
 
             if (this.counter == this.randomNumber) {
                 this.velocityX = -this.velocityX;
                 this.velocityY = -this.velocityY;
                 this.counter = 0;
-                this.randomNumber = (Math.floor(Math.random() * 800) + 300);
+                this.randomNumber = (Math.floor(Math.random() * 800) + 100);
             }
 
             this.posX += this.velocityX;

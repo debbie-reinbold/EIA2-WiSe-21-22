@@ -6,6 +6,8 @@ Datum: <08.01.2022>
 Quellen: <Zusammengearbeitet mit Tini, Asya, Lisa >
 */
 
+
+
 namespace Polymorphie {
     export let crc2: CanvasRenderingContext2D;
     export let goldenCut: number = 0.62;
@@ -47,14 +49,14 @@ namespace Polymorphie {
     function createLeafs(_nLeaf: number): void {
         for (let index: number = 0; index < _nLeaf; index++) {
 
-            let randomScaleY: number = 0.5 + Math.random() * (0.60 - 0.10);
+            let randomScaleY: number = 0.8 + Math.random() * (0.1 - 0.05);
             let randomScaleX: number = randomScaleY;
             randomScaleX *= Math.round(Math.random()) ? 1 : -1;
 
-            let randomVelocityX: number = (Math.random() - 0.5) * 2;
+            let randomVelocityX: number = (Math.random() - 0.5) * 3;
             let randomVelocityY: number = (Math.random() - 0.5) * 3;
 
-            moveable.push(new Leaf({ x: crc2.canvas.width , y: crc2.canvas.height * 0.8 }, { x: randomVelocityX, y: randomVelocityY }, { x: randomScaleX, y: randomScaleY }));
+            moveable.push(new Leaf({ x: crc2.canvas.width , y: crc2.canvas.height * -0.7}, { x: randomVelocityX, y: randomVelocityY }, { x: randomScaleX, y: randomScaleY }));
         }
     }
 
